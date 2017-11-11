@@ -1,89 +1,96 @@
 # human-detection
-ART 2017 Human Detection Respository :D
+ART 2017 Human Detection Respository
 
-# Project Title
+# Human Detection
 
-Human Detection
+Our goal is to create an algorithm that can recognize humans in images using neuronetworks. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Follow the instructions below to prepare your machine.
 
 ### Prerequisites
 
 You will need:
 
 ```
-Python 3.5
+Python 3.5.x
 Tensorflow
 OpenCV
 ```
 
-### Installing
+### Installation
 
-#Python 3.5:
+# Python 3.5.x:
 
 Go to the Python website: [click me :D](https://www.python.org/downloads/release/python-350/)
 
 and choose and download the version that you need.
 
-(It has to be Python 3.5.x)
+Make sure you download Python 3.5.x for consistency on the team.
 
-#TensorFlow:
+# TensorFlow:
 
-Go to the TensorFlow website: [click me :D](https://www.tensorflow.org/install/)
+Go to the TensorFlow website: [click me :P](https://www.tensorflow.org/install/)
+
+Select your OS and select the method that you want to install TensorFlow with.
+
+Make sure you install TensorFlow that is compatible with Python 3.5.x.
+
+# OpenCV
+
+Install this package using pip3:
+
+```
+pip3 install opencv-python
+```
+
+Import the package in python shell:
+```
+import cv2
+```
+
+Also use pip3 to download matlpot
+
+If you have anymore questions go to this website: [click me :3](https://pypi.python.org/pypi/opencv-python)
 
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+# Python 3.5
 
-### Break down into end to end tests
+Test Python by testing if you can open it on terminal
 
-Explain what these tests test and why
+# TensorFlow
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+Run this program to make sure you can import TensorFlow
 
 ```
-Give an example
+# Python
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
 ```
+[source and discrition of the program] (https://www.tensorflow.org/install/install_mac) 
 
-## Deployment
+# OpenCV
 
-Add additional notes about how to deploy this on a live system
+Run this program for edge detection of an image
 
-## Built With
+```
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+img = cv2.imread('image.jpg',0) #make sure the image you're processing is in the same directory as your program
+edges = cv2.Canny(img,100,200)
 
-## Contributing
+plt.subplot(121),plt.imshow(img,cmap = 'gray')
+plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(122),plt.imshow(edges,cmap = 'gray')
+plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+plt.show()
+```
+[source and discrition of the program] (http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html) 
