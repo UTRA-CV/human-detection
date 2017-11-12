@@ -17,7 +17,7 @@ Tensorflow
 OpenCV
 ```
 
-# Installation
+## Installation
 
 ### Python 3.5.x:
 
@@ -55,7 +55,7 @@ pip3 install matplotlib
 If you have anymore questions go to this website: [click me :3](https://pypi.python.org/pypi/opencv-python)
 
 
-# Running the tests
+## Running the tests
 
 You can run the following tests to confirm that the programs are correctly installed.
 
