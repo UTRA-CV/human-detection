@@ -19,7 +19,7 @@ OpenCV
 
 ## Installation
 
-### Python 3.5.x:
+### Python 3.5.x
 
 Go to the Python website: [click me :D](https://www.python.org/downloads/release/python-350/)
 
@@ -27,7 +27,7 @@ and choose and download the version that you need.
 
 Make sure you download Python 3.5.x for consistency on the team.
 
-### TensorFlow:
+### TensorFlow
 
 Go to the TensorFlow website: [click me :P](https://www.tensorflow.org/install/)
 
