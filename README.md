@@ -59,7 +59,7 @@ If you have anymore questions go to this website: [click me :3](https://pypi.pyt
 
 You can run the following tests to confirm that the programs are correctly installed.
 
-### Python 3.5
+### Python 3.5.x
 
 Test Python by testing if you can open it on terminal
 
