@@ -19,7 +19,7 @@ OpenCV
 
 # Installation
 
-## Python 3.5.x:
+### Python 3.5.x:
 
 Go to the Python website: [click me :D](https://www.python.org/downloads/release/python-350/)
 
@@ -27,7 +27,7 @@ and choose and download the version that you need.
 
 Make sure you download Python 3.5.x for consistency on the team.
 
-## TensorFlow:
+### TensorFlow:
 
 Go to the TensorFlow website: [click me :P](https://www.tensorflow.org/install/)
 
@@ -35,7 +35,7 @@ Select your OS and select the method that you want to install TensorFlow with.
 
 Make sure you install TensorFlow that is compatible with Python 3.5.x.
 
-# OpenCV
+### OpenCV
 
 Install this package using pip3:
 
@@ -57,11 +57,11 @@ If you have anymore questions go to this website: [click me :3](https://pypi.pyt
 
 You can run the following tests to confirm that the programs are correctly installed.
 
-## Python 3.5
+### Python 3.5
 
 Test Python by testing if you can open it on terminal
 
-## TensorFlow
+### TensorFlow
 
 Run this program to make sure you can import TensorFlow
 
@@ -72,9 +72,9 @@ hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 print(sess.run(hello))
 ```
-[source and discrition of the program](https://www.tensorflow.org/install/install_mac) 
+[source and discription of the program](https://www.tensorflow.org/install/install_mac) 
 
-## OpenCV
+### OpenCV
 
 Run this program for edge detection of an image
 
@@ -93,4 +93,4 @@ plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
 
 plt.show()
 ```
-[source and discrition of the program](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html) 
+[source and discription of the program](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html) 
