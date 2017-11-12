@@ -38,7 +38,6 @@ Make sure you install TensorFlow that is compatible with Python 3.5.x.
 ### OpenCV
 
 Install this package using pip3:
-
 ```
 pip3 install opencv-python
 ```
@@ -48,7 +47,10 @@ Import the package in python shell:
 import cv2
 ```
 
-Also use pip3 to download matlpot
+Also use pip3 to install matplotlib:
+```
+pip3 install matplotlib
+```
 
 If you have anymore questions go to this website: [click me :3](https://pypi.python.org/pypi/opencv-python)
 
