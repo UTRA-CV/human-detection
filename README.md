@@ -9,7 +9,7 @@ See [installation](https://github.com/UTRA-CV/human-detection/installation.md) f
 
 ### Getting started
 
-First, navigate to where you've cloned the repo. Then, do _one_ of the following to get started with darkflow.
+First, navigate to where you've cloned the repo. Then, do _one_ of the following to get started with darkflow. Note that what we are doing here is installing darkflow as a _package_.
 
 1. Just build the Cython extensions in place. NOTE: If installing this way you will have to use `./flow` in the cloned darkflow directory instead of `flow` as darkflow is not installed globally.
     ```
