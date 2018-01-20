@@ -1,8 +1,4 @@
-# Human Detection
-
-For human detection for autononomous rover.
-
-## Getting Started
+# Getting Started
 
 Follow the instructions below to prepare your machine.
 
