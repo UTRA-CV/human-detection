@@ -26,7 +26,7 @@ First, navigate to where you've cloned the repo. Then, do _one_ of the following
     pip install .
     ```
 
-Download [weight files](https://drive.google.com/drive/folders/0B1tW_VtY7onidEwyQ2FtQVplWEU) (all you need is yolo.weights) and save in the bin/ folder.
+Download [weight files](https://drive.google.com/drive/folders/0B1tW_VtY7onidEwyQ2FtQVplWEU) (all you need is `yolo.weights`) and save in the `bin/` folder.
 
 For our purposes, we are only interested in labeling persons. We have two options: we can either train a new net with only one label 'person', or simply ignore anything not labelled as person. The only benefit of training a new net with only 'person' would be speed, which is unnecessary since prediction is already pretty fast. So, we will simply parse the output of the model for objects labelled 'person'.
 
