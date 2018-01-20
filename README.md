@@ -32,7 +32,7 @@ For our purposes, we are only interested in labeling persons. We have two option
 
 ## Flowing the graph using `flow`
 
-In order to do prediction, we provide arguments to the command line call 'flow'. Some important arguments are described below.
+In order to do prediction, we provide arguments to the command `flow`. Some important arguments are described below.
 
 ```bash
 # Have a look options for arguments
