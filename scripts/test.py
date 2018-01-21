@@ -1,10 +1,8 @@
-from darkflow.net.build import TFNet
+from predict import predict
 import cv2
 
-options = {"model": "cfg/yolo.cfg", "load": "bin/yolo.weights"}
+image1 = cv2.imread("./sample_img/sample_dog.jpg")
+image2 = cv2.imread("./sample_img/sample_computer.jpg")
 
-tfnet = TFNet(options)
-
-imgcv = cv2.imread("./sample_img/sample_dog.jpg")
-result = tfnet.return_predict(imgcv)
-print(result)
+print (predict(image1))
+print (predict(image2))
