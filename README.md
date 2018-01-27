@@ -5,7 +5,7 @@ This is a README modified from the original [darkflow](https://github.com/thtrie
 ## Dependencies
 
 Python3, tensorflow 1.0, numpy, opencv 3.
-See [installation](https://github.com/UTRA-CV/human-detection/installation.md) for instructions on setting these up.
+See [installation](https://github.com/UTRA-CV/human-detection/blob/master/installation.md) for instructions on setting these up.
 
 ### Getting started
 
