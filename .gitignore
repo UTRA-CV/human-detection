@@ -10,6 +10,8 @@ sample_img/*.jpg
 !sample_img/sample_*.jpg
 sample_img/out/*
 sample_vid
+imgs/*.jpg
+imgs/out/*
 
 # Annotated test results
 results/
