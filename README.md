@@ -70,7 +70,7 @@ JSON output:
 
 ## Using darkflow from another python application
 
-We will utilize this functionality for the rover.
+See `scripts/` for the implementation of the following functionality for uses for the rover.
 
 Please note that `return_predict(img)` must take an `numpy.ndarray`. Your image must be loaded beforehand and passed to `return_predict(img)`. Passing the file path won't work.
 

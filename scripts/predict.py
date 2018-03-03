@@ -1,16 +1,18 @@
 from darkflow.net.build import TFNet
 import cv2
 
-# add GPU arg for testing on Jetson
-options = {"model": "cfg/yolo.cfg", "load": "bin/yolo.weights"}
+options = {"model": "cfg/yolo.cfg", "load": "bin/yolo.weights", "gpu": 1.0, "threshold": 0.5}
 
 tfnet = TFNet(options)
 
 def label_parser(predictions):
     '''Takes in a list of dictionaries corresponding to outputs of model,
-    returns array of tuples corresponding to topleft and bottomright corners of
-    bounding box for objects labeled as 'person'.'''
-    pass
+    filters for objects labelled as 'person'.'''
+    new_predictions = []
+    for prediction in predictions:
+        if prediction['label'] == "person":
+            new_predictions.append(prediction)
+    return new_predictions
 
 def predict(image):
-    return tfnet.return_predict(image)
+    return label_parser(tfnet.return_predict(image))
